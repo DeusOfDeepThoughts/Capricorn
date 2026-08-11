@@ -1,1 +1,2 @@
 Capricorn-V129-Setup-x64.exe filter=lfs diff=lfs merge=lfs -text
+Capricorn-V129-Windows-x64.zip filter=lfs diff=lfs merge=lfs -text

@@ -1,0 +1,2088 @@
+{
+  "version": 36,
+  "modules": [
+    {
+      "id": "identity",
+      "name": "个人底色",
+      "desc": "真实自我、角色差异与身份叙事",
+      "questions": [
+        {
+          "t": "如果只用三个词描述现实中的自己，你会选什么？每个词各举一个真实例子。",
+          "h": "例子比形容词更重要。",
+          "type": "open",
+          "evidence": {
+            "construct": "自我描述与行为证据",
+            "reason": "用特质词建立初始假设，再用真实行为降低抽象自评偏差。",
+            "source": {
+              "label": "Soto & John（2017）· BFI-2 大五人格及15个侧面",
+              "url": "https://doi.org/10.1037/pspp0000096"
+            }
+          },
+          "promptWeightPercent": 16,
+          "promptWeight": 0.16,
+          "promptWeightLabel": "16%"
+        },
+        {
+          "t": "别人最容易误解你的地方是什么？最近一次发生时，对方看见了什么，而你真实在想什么？",
+          "h": "区分外在表现、内心动机和最后采取的行动。",
+          "type": "open",
+          "evidence": {
+            "construct": "自我—他人知觉差异",
+            "reason": "同时采集外显行为、内在动机和结果，避免只按单一标签模仿。",
+            "source": {
+              "label": "Jayawickreme 等（2021）· 人格动力与情境变化",
+              "url": "https://doi.org/10.5964/ps.6179"
+            }
+          },
+          "promptWeightPercent": 15,
+          "promptWeight": 0.15,
+          "promptWeightLabel": "15%"
+        },
+        {
+          "t": "你的性格有多大程度会随关系和环境变化？",
+          "h": "请依据多个真实场景作答，不把一次表现当成稳定性格。",
+          "type": "scale",
+          "lo": "各场景高度一致",
+          "hi": "随场景明显变化",
+          "evidence": {
+            "construct": "跨情境人格变异",
+            "reason": "人格表现会随情境变化，稳定性应由多个场景共同估计。",
+            "source": {
+              "label": "Jayawickreme 等（2021）· 人格动力与情境变化",
+              "url": "https://doi.org/10.5964/ps.6179"
+            }
+          },
+          "promptWeightPercent": 17,
+          "promptWeight": 0.17,
+          "promptWeightLabel": "17%"
+        },
+        {
+          "t": "面对陌生人、同事、朋友、家人和亲密的人时，你分别会隐藏或放大自己哪些部分？",
+          "h": "只回答差异明显的关系即可。",
+          "type": "open",
+          "evidence": {
+            "construct": "关系情境中的状态分布",
+            "reason": "比较不同关系中的行为状态，学习“对谁、何时”怎样表现。",
+            "source": {
+              "label": "Jayawickreme 等（2021）· 人格动力与情境变化",
+              "url": "https://doi.org/10.5964/ps.6179"
+            }
+          },
+          "promptWeightPercent": 16,
+          "promptWeight": 0.16,
+          "promptWeightLabel": "16%"
+        },
+        {
+          "t": "“现实中的你”和“你希望成为的人”最大的差距是什么？",
+          "h": "愿望会与稳定特质分开保存。",
+          "type": "open",
+          "evidence": {
+            "construct": "现实自我与理想自我",
+            "reason": "将当前稳定特征与希望成为的样子分开，防止把愿望误当事实。",
+            "source": {
+              "label": "Higgins（1987）· 自我差异理论",
+              "url": "https://doi.org/10.1037/0033-295X.94.3.319"
+            }
+          },
+          "promptWeightPercent": 13,
+          "promptWeight": 0.13,
+          "promptWeightLabel": "13%"
+        },
+        {
+          "t": "你身上最矛盾、却又同时真实存在的两面是什么？",
+          "h": "例如渴望亲近又害怕被看透。",
+          "type": "open",
+          "evidence": {
+            "construct": "特质的共存与条件化",
+            "reason": "看似矛盾的特征可能在不同触发条件下同时成立。",
+            "source": {
+              "label": "Jayawickreme 等（2021）· 人格动力与情境变化",
+              "url": "https://doi.org/10.5964/ps.6179"
+            }
+          },
+          "promptWeightPercent": 14,
+          "promptWeight": 0.14,
+          "promptWeightLabel": "14%"
+        },
+        {
+          "t": "如果你知道并认同自己的 MBTI、九型人格、星座、生肖或五行，请直接填写。",
+          "h": "无需重新测试；这些标签只作低权重自我叙事参考。",
+          "type": "open",
+          "evidence": {
+            "construct": "自我认同标签",
+            "reason": "MBTI、星座等只记录为用户自我叙事，不作为高权重科学测量结果。",
+            "source": {
+              "label": "Soto & John（2017）· BFI-2 大五人格及15个侧面",
+              "url": "https://doi.org/10.1037/pspp0000096"
+            }
+          },
+          "promptWeightPercent": 2,
+          "promptWeight": 0.02,
+          "promptWeightLabel": "2%"
+        },
+        {
+          "t": "请用你自己的语气，写一段不超过 100 字的自我介绍。",
+          "h": "写给一个即将长期相处、但还不熟悉你的人。",
+          "type": "open",
+          "evidence": {
+            "construct": "自然自我叙事",
+            "reason": "短篇自由叙述同时提供身份主题和自然语言风格样本。",
+            "source": {
+              "label": "McAdams & McLean（2013）· 叙事身份",
+              "url": "https://doi.org/10.1177/0963721413475622"
+            }
+          },
+          "promptWeightPercent": 7,
+          "promptWeight": 0.07,
+          "promptWeightLabel": "7%"
+        }
+      ],
+      "promptWeightRationale": "优先识别跨情境自我结构、自他差异和真实矛盾；类型标签仅作自我叙事，低权重处理。"
+    },
+    {
+      "id": "values",
+      "name": "价值与世界观",
+      "desc": "价值排序、知情权、公平与原则例外",
+      "questions": [
+        {
+          "t": "当重要价值真正发生冲突时，你最不愿牺牲哪三项？",
+          "h": "选现实中会优先保护的价值；选项依据 Schwartz 基本价值理论归并。",
+          "type": "multi",
+          "max": 3,
+          "o": [
+            "自主：独立思考与选择",
+            "刺激：新奇与挑战",
+            "享乐：愉悦体验",
+            "成就：能力与成功",
+            "权力：地位与资源",
+            "安全：稳定与免受威胁",
+            "遵从：避免伤害他人或破坏规则",
+            "传统：尊重文化、信仰与习俗",
+            "仁爱：照顾亲近的人",
+            "普世关怀：公平、包容与自然",
+            "其他（请在文字回答中补充）"
+          ],
+          "evidence": {
+            "construct": "基本价值优先级",
+            "reason": "选项对应跨文化研究支持的基本价值动机，用冲突选择获得真实排序。",
+            "source": {
+              "label": "Schwartz 等（2012）· 19类基本价值的环形模型",
+              "url": "https://doi.org/10.1037/a0029393"
+            }
+          },
+          "promptWeightPercent": 17,
+          "promptWeight": 0.17,
+          "promptWeightLabel": "17%"
+        },
+        {
+          "t": "最近一次“说实话会伤害在意的人”时，你实际上怎么做了？",
+          "h": "选最接近的行为，再补充当时的原话。",
+          "type": "single",
+          "o": [
+            "直接说出",
+            "换成温和说法",
+            "只说必要部分",
+            "暂时不说",
+            "用善意谎言保护对方",
+            "没有类似经历",
+            "其他（请在文字回答中补充）"
+          ],
+          "evidence": {
+            "construct": "价值—行为一致性",
+            "reason": "具体事件能检验“诚实、仁爱、安全”等价值在冲突中的实际权重。",
+            "source": {
+              "label": "Schwartz 等（2012）· 19类基本价值的环形模型",
+              "url": "https://doi.org/10.1037/a0029393"
+            }
+          },
+          "promptWeightPercent": 13,
+          "promptWeight": 0.13,
+          "promptWeightLabel": "13%"
+        },
+        {
+          "t": "一个刚认识的人主动承诺帮助你时，你通常先采取哪种做法？",
+          "h": "选择最常见的第一步，并补充什么证据会增加或撤回信任。",
+          "type": "single",
+          "o": [
+            "先接受，再观察是否兑现",
+            "先核验身份或过往记录",
+            "只接受低风险、可撤回的部分",
+            "明确条件与责任后再接受",
+            "礼貌拒绝",
+            "没有相关经历",
+            "其他（请在文字回答中补充）"
+          ],
+          "evidence": {
+            "construct": "初始信任策略",
+            "reason": "以可观察的第一步测量信任校准，而非笼统询问“是否相信人”。",
+            "source": {
+              "label": "Rempel、Holmes & Zanna（1985）· 人际信任的可预测性、可靠性与信念",
+              "url": "https://doi.org/10.1037/0022-3514.49.1.95"
+            }
+          },
+          "promptWeightPercent": 9,
+          "promptWeight": 0.09,
+          "promptWeightLabel": "9%"
+        },
+        {
+          "t": "公平更接近“所有人执行同一规则”，还是“照顾每个人的具体处境”？",
+          "h": "两端分别代表规则一致性与情境关照，不存在标准答案。",
+          "type": "scale",
+          "lo": "统一规则优先",
+          "hi": "具体处境优先",
+          "evidence": {
+            "construct": "公平判断规则",
+            "reason": "比较规则一致与情境关照，捕捉普世关怀、遵从及安全价值的权衡。",
+            "source": {
+              "label": "Schwartz 等（2012）· 19类基本价值的环形模型",
+              "url": "https://doi.org/10.1037/a0029393"
+            }
+          },
+          "promptWeightPercent": 10,
+          "promptWeight": 0.1,
+          "promptWeightLabel": "10%"
+        },
+        {
+          "t": "你上一次面对明显不合理的规则时做了什么？",
+          "h": "描述真实行为，不必表现勇敢。",
+          "type": "single",
+          "o": [
+            "仍然遵守",
+            "低调绕开",
+            "公开反对",
+            "先评估代价",
+            "尝试内部改变",
+            "想不起类似经历",
+            "其他（请在文字回答中补充）"
+          ],
+          "evidence": {
+            "construct": "面对规则的实际行为",
+            "reason": "通过最近事件区分价值宣言与现实中的成本敏感行为。",
+            "source": {
+              "label": "Schwartz 等（2012）· 19类基本价值的环形模型",
+              "url": "https://doi.org/10.1037/a0029393"
+            }
+          },
+          "promptWeightPercent": 11,
+          "promptWeight": 0.11,
+          "promptWeightLabel": "11%"
+        },
+        {
+          "t": "忠于重要的人和忠于原则发生冲突时，你最近一次站在哪一边？",
+          "h": "可以区分伴侣、家人、朋友和工作。",
+          "type": "single",
+          "o": [
+            "原则优先",
+            "关系优先",
+            "先保护人再处理原则",
+            "看是否伤害第三方",
+            "没有相关经历",
+            "其他（请在文字回答中补充）"
+          ],
+          "evidence": {
+            "construct": "忠诚与原则冲突",
+            "reason": "迫使相容价值进入取舍，获得比单独评分更高密度的优先关系。",
+            "source": {
+              "label": "Schwartz 等（2012）· 19类基本价值的环形模型",
+              "url": "https://doi.org/10.1037/a0029393"
+            }
+          },
+          "promptWeightPercent": 15,
+          "promptWeight": 0.15,
+          "promptWeightLabel": "15%"
+        },
+        {
+          "t": "什么事情即使能给你巨大好处，你也不会做？",
+          "h": "只写原则即可，不要求披露私人事件。",
+          "type": "open",
+          "evidence": {
+            "construct": "不可交易的道德边界",
+            "reason": "开放回答可识别量表选项未覆盖的个人禁区和例外条件。",
+            "source": {
+              "label": "Schwartz 等（2012）· 19类基本价值的环形模型",
+              "url": "https://doi.org/10.1037/a0029393"
+            }
+          },
+          "promptWeightPercent": 16,
+          "promptWeight": 0.16,
+          "promptWeightLabel": "16%"
+        },
+        {
+          "t": "你曾在哪个重要观点上彻底改变过？什么证据或经历使你改变？",
+          "h": "用来学习你如何更新认知，而不是把观点冻结。",
+          "type": "open",
+          "evidence": {
+            "construct": "观点更新条件",
+            "reason": "记录什么证据能触发信念修订，支持后续人格持续学习。",
+            "source": {
+              "label": "Bruine de Bruin、Parker & Fischhoff（2007）· 成人决策能力",
+              "url": "https://doi.org/10.1037/0022-3514.92.5.938"
+            }
+          },
+          "promptWeightPercent": 9,
+          "promptWeight": 0.09,
+          "promptWeightLabel": "9%"
+        }
+      ],
+      "promptWeightRationale": "价值冲突中的真实选择和不可跨越的底线最能预测立场；抽象偏好由行为证据校正。"
+    },
+    {
+      "id": "life",
+      "name": "人生与意义",
+      "desc": "成功、幸福、努力与面对不可控",
+      "questions": [
+        {
+          "t": "对你而言，怎样才算“没有白活”？请说一件现实中正在做或已经做过的事。",
+          "h": "价值宣言与现实行动都会被保留。",
+          "type": "open",
+          "evidence": {
+            "construct": "生命意义与行动证据",
+            "reason": "意义感需同时观察主观目的和已经投入的行动。",
+            "source": {
+              "label": "Steger 等（2006）· 生命意义的存在与寻求",
+              "url": "https://doi.org/10.1037/0022-0167.53.1.80"
+            }
+          },
+          "promptWeightPercent": 17,
+          "promptWeight": 0.17,
+          "promptWeightLabel": "17%"
+        },
+        {
+          "t": "你真正想要的成功是什么？哪一种被普遍羡慕的成功反而会让你不舒服？",
+          "h": "区分个人目标与外界评价。",
+          "type": "open",
+          "evidence": {
+            "construct": "内在与外在目标",
+            "reason": "区分自主选择、胜任、关系需要与外界评价驱动的目标。",
+            "source": {
+              "label": "Deci & Ryan（2000）· 自我决定理论",
+              "url": "https://doi.org/10.1207/S15327965PLI1104_01"
+            }
+          },
+          "promptWeightPercent": 16,
+          "promptWeight": 0.16,
+          "promptWeightLabel": "16%"
+        },
+        {
+          "t": "面对一件重要但胜算不高的事，你通常愿意投入到什么程度？",
+          "h": "请结合目标是否自主选择、投入是否可持续以及失败代价判断。",
+          "type": "scale",
+          "lo": "主要依据胜算决定",
+          "hi": "低胜算也愿持续投入",
+          "evidence": {
+            "construct": "低胜算目标投入",
+            "reason": "关注自主性、代价和持续性，而不是把坚持一律视为优点。",
+            "source": {
+              "label": "Deci & Ryan（2000）· 自我决定理论",
+              "url": "https://doi.org/10.1207/S15327965PLI1104_01"
+            }
+          },
+          "promptWeightPercent": 11,
+          "promptWeight": 0.11,
+          "promptWeightLabel": "11%"
+        },
+        {
+          "t": "你经历过的幸福最接近哪两种？",
+          "h": "请从真实体验出发。",
+          "type": "multi",
+          "max": 2,
+          "o": [
+            "平静满足",
+            "被理解和连接",
+            "自由选择",
+            "达成目标",
+            "持续成长",
+            "短暂强烈的快乐",
+            "有意义地承担责任",
+            "其他（请在文字回答中补充）"
+          ],
+          "evidence": {
+            "construct": "幸福需要来源",
+            "reason": "选项覆盖自主、胜任、联结及主观积极体验，允许组合出现。",
+            "source": {
+              "label": "Deci & Ryan（2000）· 自我决定理论",
+              "url": "https://doi.org/10.1207/S15327965PLI1104_01"
+            }
+          },
+          "promptWeightPercent": 11,
+          "promptWeight": 0.11,
+          "promptWeightLabel": "11%"
+        },
+        {
+          "t": "上一次遇到无法改变的不公平时，你最终靠什么继续生活？",
+          "h": "可以是行动、关系、信念、麻木或暂时逃开。",
+          "type": "open",
+          "evidence": {
+            "construct": "不可控事件应对",
+            "reason": "具体事件用于识别接纳、行动、支持寻求等应对过程。",
+            "source": {
+              "label": "Carver（1997）· Brief COPE 应对方式框架",
+              "url": "https://doi.org/10.1207/s15327558ijbm0401_6"
+            }
+          },
+          "promptWeightPercent": 13,
+          "promptWeight": 0.13,
+          "promptWeightLabel": "13%"
+        },
+        {
+          "t": "你更常后悔“做错了”，还是“没去做”？",
+          "h": "用一件真实的小事或大事说明。",
+          "type": "single",
+          "o": [
+            "做错更后悔",
+            "没做更后悔",
+            "伤害别人时更后悔",
+            "能补救就很少后悔",
+            "很少称为后悔",
+            "其他（请在文字回答中补充）"
+          ],
+          "evidence": {
+            "construct": "行动与不行动的后悔",
+            "reason": "比较不同反事实方向，学习用户如何评估已发生的选择。",
+            "source": {
+              "label": "Bruine de Bruin、Parker & Fischhoff（2007）· 成人决策能力",
+              "url": "https://doi.org/10.1037/0022-3514.92.5.938"
+            }
+          },
+          "promptWeightPercent": 9,
+          "promptWeight": 0.09,
+          "promptWeightLabel": "9%"
+        },
+        {
+          "t": "你更愿意拥有波澜壮阔但不稳定的人生，还是平稳安定的人生？",
+          "h": "可以说明人生不同阶段是否会改变。",
+          "type": "single",
+          "o": [
+            "波澜壮阔",
+            "平稳安定",
+            "先冒险后安定",
+            "取决于是否有人同行",
+            "无法二选一",
+            "其他（请在文字回答中补充）"
+          ],
+          "evidence": {
+            "construct": "稳定与探索取向",
+            "reason": "人生领域的风险偏好不能由单一“大胆/保守”标签替代。",
+            "source": {
+              "label": "Blais & Weber（2006）· 领域特异风险偏好",
+              "url": "https://doi.org/10.1017/S1930297500000334"
+            }
+          },
+          "promptWeightPercent": 8,
+          "promptWeight": 0.08,
+          "promptWeightLabel": "8%"
+        },
+        {
+          "t": "面对“来不及”或无法挽回的事情，你通常如何与它相处？",
+          "h": "敏感问题，可以只描述处理方式，不讲具体事件。",
+          "type": "open",
+          "evidence": {
+            "construct": "不可逆事件的适应",
+            "reason": "开放叙述区分意义建构、接纳、回避与问题聚焦应对。",
+            "source": {
+              "label": "Carver（1997）· Brief COPE 应对方式框架",
+              "url": "https://doi.org/10.1207/s15327558ijbm0401_6"
+            }
+          },
+          "promptWeightPercent": 15,
+          "promptWeight": 0.15,
+          "promptWeightLabel": "15%"
+        }
+      ],
+      "promptWeightRationale": "意义、成功定义和面对不可逆处境的方式构成人生观主轴；单一生活偏好避免过度放大。"
+    },
+    {
+      "id": "thinking",
+      "name": "思考与决策",
+      "desc": "证据、直觉、风险领域与可逆性",
+      "questions": [
+        {
+          "t": "上一次做重大决定时，你真正做的第一步是什么？",
+          "h": "选择实际行为，不是理想方法。",
+          "type": "single",
+          "o": [
+            "搜集事实数据",
+            "列出利弊",
+            "询问信任的人",
+            "跟随直觉",
+            "先试一个小步骤",
+            "拖到必须决定",
+            "先想最坏结果",
+            "其他（请在文字回答中补充）"
+          ],
+          "evidence": {
+            "construct": "决策起始策略",
+            "reason": "第一步能反映信息搜索、规则应用、直觉和拖延等实际策略。",
+            "source": {
+              "label": "Bruine de Bruin、Parker & Fischhoff（2007）· 成人决策能力",
+              "url": "https://doi.org/10.1037/0022-3514.92.5.938"
+            }
+          },
+          "promptWeightPercent": 15,
+          "promptWeight": 0.15,
+          "promptWeightLabel": "15%"
+        },
+        {
+          "t": "哪两类证据最容易让你真正改变观点？",
+          "h": "改变观点，不只是口头同意。",
+          "type": "multi",
+          "max": 2,
+          "o": [
+            "可复核数据",
+            "严密逻辑",
+            "亲身验证",
+            "专家共识",
+            "信任之人的经验",
+            "对具体人的影响",
+            "长期观察",
+            "其他（请在文字回答中补充）"
+          ],
+          "evidence": {
+            "construct": "证据权重",
+            "reason": "比较可复核证据、逻辑、经验与社会信息，学习更新观点的门槛。",
+            "source": {
+              "label": "Bruine de Bruin、Parker & Fischhoff（2007）· 成人决策能力",
+              "url": "https://doi.org/10.1037/0022-3514.92.5.938"
+            }
+          },
+          "promptWeightPercent": 14,
+          "promptWeight": 0.14,
+          "promptWeightLabel": "14%"
+        },
+        {
+          "t": "请分别说说你在金钱、职业、感情和公开表达上的风险偏好。",
+          "h": "可以很不一致；分别写一个现实例子。",
+          "type": "open",
+          "evidence": {
+            "construct": "领域特异风险",
+            "reason": "风险偏好在金钱、职业、关系等领域可能显著不同。",
+            "source": {
+              "label": "Blais & Weber（2006）· 领域特异风险偏好",
+              "url": "https://doi.org/10.1017/S1930297500000334"
+            }
+          },
+          "promptWeightPercent": 15,
+          "promptWeight": 0.15,
+          "promptWeightLabel": "15%"
+        },
+        {
+          "t": "信息不足但必须立刻决定时，你最常使用哪条原则？",
+          "h": "可补充什么情况会改变它。",
+          "type": "single",
+          "o": [
+            "选最可逆方案",
+            "避免最坏结果",
+            "按过往经验",
+            "听最专业的人",
+            "相信第一直觉",
+            "先争取更多时间",
+            "其他（请在文字回答中补充）"
+          ],
+          "evidence": {
+            "construct": "不确定下的决策规则",
+            "reason": "可逆性、最坏结果和延迟等策略分别对应不同损失结构。",
+            "source": {
+              "label": "Bruine de Bruin、Parker & Fischhoff（2007）· 成人决策能力",
+              "url": "https://doi.org/10.1037/0022-3514.92.5.938"
+            }
+          },
+          "promptWeightPercent": 14,
+          "promptWeight": 0.14,
+          "promptWeightLabel": "14%"
+        },
+        {
+          "t": "数据结论与强烈直觉相反时，你上一次怎么处理？结果如何？",
+          "h": "真实经历的权重高于理想做法。",
+          "type": "open",
+          "evidence": {
+            "construct": "直觉—数据冲突",
+            "reason": "真实结果帮助识别用户何时校准或坚持第一判断。",
+            "source": {
+              "label": "Bruine de Bruin、Parker & Fischhoff（2007）· 成人决策能力",
+              "url": "https://doi.org/10.1037/0022-3514.92.5.938"
+            }
+          },
+          "promptWeightPercent": 15,
+          "promptWeight": 0.15,
+          "promptWeightLabel": "15%"
+        },
+        {
+          "t": "效率和完美冲突时，你用什么信号判断“该停了”？",
+          "h": "可用工作、创作、学习或生活举例。",
+          "type": "open",
+          "evidence": {
+            "construct": "停止规则与满意化",
+            "reason": "询问停止信号比笼统询问完美主义更接近可执行决策过程。",
+            "source": {
+              "label": "Bruine de Bruin、Parker & Fischhoff（2007）· 成人决策能力",
+              "url": "https://doi.org/10.1037/0022-3514.92.5.938"
+            }
+          },
+          "promptWeightPercent": 10,
+          "promptWeight": 0.1,
+          "promptWeightLabel": "10%"
+        },
+        {
+          "t": "处理复杂问题时，你更常先建立整体框架，还是先拆成可执行步骤？",
+          "h": "请按现实中的第一步选择；两种方式都可能有效。",
+          "type": "scale",
+          "lo": "先建立整体框架",
+          "hi": "先拆成具体步骤",
+          "evidence": {
+            "construct": "整体—分析加工顺序",
+            "reason": "测量问题表征的起始方式，不把任一方式预设为更理性。",
+            "source": {
+              "label": "Bruine de Bruin、Parker & Fischhoff（2007）· 成人决策能力",
+              "url": "https://doi.org/10.1037/0022-3514.92.5.938"
+            }
+          },
+          "promptWeightPercent": 8,
+          "promptWeight": 0.08,
+          "promptWeightLabel": "8%"
+        },
+        {
+          "t": "写出你做重要决定时，脑中最常问自己的三句话。",
+          "h": "请保留真实措辞。",
+          "type": "open",
+          "evidence": {
+            "construct": "元认知自我提问",
+            "reason": "原句能直接生成桌宠未来用于模拟决策的内部检查规则。",
+            "source": {
+              "label": "Bruine de Bruin、Parker & Fischhoff（2007）· 成人决策能力",
+              "url": "https://doi.org/10.1037/0022-3514.92.5.938"
+            }
+          },
+          "promptWeightPercent": 9,
+          "promptWeight": 0.09,
+          "promptWeightLabel": "9%"
+        }
+      ],
+      "promptWeightRationale": "重大决策、证据更新、风险分域和直觉—数据冲突具有较强行为预测力；形式偏好权重较低。"
+    },
+    {
+      "id": "emotion",
+      "name": "情绪与压力",
+      "desc": "现实反应、安慰需求与失控状态",
+      "questions": [
+        {
+          "t": "最近一次明显难受时，你真正希望身边的人先做哪两件事？",
+          "h": "选当时真正需要的。",
+          "type": "multi",
+          "max": 2,
+          "o": [
+            "安静听我说",
+            "抱抱或陪伴",
+            "帮我分析",
+            "给解决办法",
+            "替我分担",
+            "让我独处",
+            "转移注意",
+            "明确站我这边",
+            "其他（请在文字回答中补充）"
+          ],
+          "evidence": {
+            "construct": "社会支持偏好",
+            "reason": "区分情绪支持、信息支持、实际帮助、陪伴与独处需要。",
+            "source": {
+              "label": "Carver（1997）· Brief COPE 应对方式框架",
+              "url": "https://doi.org/10.1207/s15327558ijbm0401_6"
+            }
+          },
+          "promptWeightPercent": 16,
+          "promptWeight": 0.16,
+          "promptWeightLabel": "16%"
+        },
+        {
+          "t": "压力很大时，别人最可能观察到你哪三种变化？",
+          "h": "选择外在行为。",
+          "type": "multi",
+          "max": 3,
+          "o": [
+            "变沉默",
+            "变急躁",
+            "反复检查",
+            "拖延逃避",
+            "过度工作",
+            "睡眠变化",
+            "试图控制一切",
+            "突然想放弃",
+            "频繁求助",
+            "假装正常",
+            "其他（请在文字回答中补充）"
+          ],
+          "evidence": {
+            "construct": "压力下的可观察反应",
+            "reason": "外显变化比抽象情绪标签更利于识别用户进入压力状态。",
+            "source": {
+              "label": "Carver（1997）· Brief COPE 应对方式框架",
+              "url": "https://doi.org/10.1207/s15327558ijbm0401_6"
+            }
+          },
+          "promptWeightPercent": 13,
+          "promptWeight": 0.13,
+          "promptWeightLabel": "13%"
+        },
+        {
+          "t": "回想最近一次真正生气：你说的第一句话是什么，最后又怎么收尾？",
+          "h": "可以隐去人物和事件，尽量保留原话。",
+          "type": "open",
+          "evidence": {
+            "construct": "愤怒表达与修复",
+            "reason": "采集情绪反应阶段及事后调节方式，避免只记录“易怒”。",
+            "source": {
+              "label": "Gross（2015）· 情绪调节扩展过程模型",
+              "url": "https://doi.org/10.1080/1047840X.2015.989751"
+            }
+          },
+          "promptWeightPercent": 14,
+          "promptWeight": 0.14,
+          "promptWeightLabel": "14%"
+        },
+        {
+          "t": "你说“没事”时，现实中可能分别意味着什么？",
+          "h": "选中后可说明别人应不应该继续问。",
+          "type": "multi",
+          "o": [
+            "真的没事",
+            "有事但不想说",
+            "想被继续问一次",
+            "怕麻烦别人",
+            "还没想清楚",
+            "不信任对方",
+            "希望对方只陪着",
+            "其他（请在文字回答中补充）"
+          ],
+          "evidence": {
+            "construct": "间接表达的语境含义",
+            "reason": "同一句“没事”在不同情境可能承担抑制、求助或边界功能。",
+            "source": {
+              "label": "Gross（2015）· 情绪调节扩展过程模型",
+              "url": "https://doi.org/10.1080/1047840X.2015.989751"
+            }
+          },
+          "promptWeightPercent": 8,
+          "promptWeight": 0.08,
+          "promptWeightLabel": "8%"
+        },
+        {
+          "t": "哪些方式真实地帮助你恢复，而不是只让你短暂逃开？",
+          "h": "最多选择三项。",
+          "type": "multi",
+          "max": 3,
+          "o": [
+            "睡觉",
+            "独处",
+            "倾诉",
+            "运动",
+            "音乐影视",
+            "工作",
+            "写下来",
+            "散步旅行",
+            "身体接触",
+            "哭一场",
+            "解决问题",
+            "等待时间",
+            "其他（请在文字回答中补充）"
+          ],
+          "evidence": {
+            "construct": "有效与回避性应对",
+            "reason": "选项按常见应对家族组织，并要求用实际恢复效果校准。",
+            "source": {
+              "label": "Carver（1997）· Brief COPE 应对方式框架",
+              "url": "https://doi.org/10.1207/s15327558ijbm0401_6"
+            }
+          },
+          "promptWeightPercent": 15,
+          "promptWeight": 0.15,
+          "promptWeightLabel": "15%"
+        },
+        {
+          "t": "当你明显不理性时，桌宠应该如何处理？",
+          "h": "可以按轻度情绪和危险决定分别说明。",
+          "type": "single",
+          "o": [
+            "先完全顺着我",
+            "先共情再提醒",
+            "直接指出问题",
+            "等我平静后再说",
+            "只阻止危险决定",
+            "根据我设置的暗号",
+            "其他（请在文字回答中补充）"
+          ],
+          "evidence": {
+            "construct": "高唤醒状态下的干预偏好",
+            "reason": "把共情、重评、延迟和安全阻断分开，形成分级响应规则。",
+            "source": {
+              "label": "Gross（2015）· 情绪调节扩展过程模型",
+              "url": "https://doi.org/10.1080/1047840X.2015.989751"
+            }
+          },
+          "promptWeightPercent": 17,
+          "promptWeight": 0.17,
+          "promptWeightLabel": "17%"
+        },
+        {
+          "t": "羞耻、嫉妒或自卑出现时，你通常把它表现成什么？",
+          "h": "可只描述外在反应，不需要透露具体事件。",
+          "type": "open",
+          "evidence": {
+            "construct": "自我意识情绪的外显形式",
+            "reason": "羞耻、嫉妒、自卑可能转化为回避、攻击或寻求确认。",
+            "source": {
+              "label": "Gross（2015）· 情绪调节扩展过程模型",
+              "url": "https://doi.org/10.1080/1047840X.2015.989751"
+            }
+          },
+          "promptWeightPercent": 10,
+          "promptWeight": 0.1,
+          "promptWeightLabel": "10%"
+        },
+        {
+          "t": "分别写一句你疲惫、委屈和开心时最可能说的话。",
+          "h": "只写原话，不分析。",
+          "type": "open",
+          "evidence": {
+            "construct": "情绪语料采样",
+            "reason": "不同情绪下的原话用于学习语气变化，而非只学习中性文风。",
+            "source": {
+              "label": "Pennebaker & King（1999）· 语言风格的稳定个体差异",
+              "url": "https://doi.org/10.1037/0022-3514.77.6.1296"
+            }
+          },
+          "promptWeightPercent": 7,
+          "promptWeight": 0.07,
+          "promptWeightLabel": "7%"
+        }
+      ],
+      "promptWeightRationale": "支持需求、真实调节方式和失去理性时的干预边界直接决定陪伴策略；表层语句只作语言校准。"
+    },
+    {
+      "id": "love",
+      "name": "爱情与亲密",
+      "desc": "爱、承诺、空间、争吵与关系修复",
+      "questions": [
+        {
+          "t": "亲密关系里，缺少哪三样东西会真正动摇你？",
+          "h": "请选择现实底线。",
+          "type": "multi",
+          "max": 3,
+          "o": [
+            "信任",
+            "忠诚",
+            "坦诚",
+            "陪伴",
+            "个人空间",
+            "身体亲密",
+            "共同成长",
+            "情绪回应",
+            "现实担当",
+            "浪漫仪式",
+            "精神共鸣",
+            "稳定承诺",
+            "其他（请在文字回答中补充）"
+          ],
+          "evidence": {
+            "construct": "亲密关系核心需求",
+            "reason": "选项覆盖信任、回应、自主、承诺与投入等关系维度。",
+            "source": {
+              "label": "Fraley、Waller & Brennan（2000）· 成人依恋的焦虑与回避维度",
+              "url": "https://doi.org/10.1037/0022-3514.78.2.350"
+            }
+          },
+          "promptWeightPercent": 15,
+          "promptWeight": 0.15,
+          "promptWeightLabel": "15%"
+        },
+        {
+          "t": "上一次争吵后，你真正希望对方怎样靠近你？",
+          "h": "选择节奏，并补充怎样说最有效。",
+          "type": "single",
+          "o": [
+            "立刻沟通",
+            "先给我时间",
+            "先道歉再讨论",
+            "先安抚或拥抱",
+            "先用行动修复",
+            "等我主动联系",
+            "看谁做错了",
+            "其他（请在文字回答中补充）"
+          ],
+          "evidence": {
+            "construct": "冲突后的靠近方式",
+            "reason": "修复节奏反映依恋焦虑、回避及关系维护策略。",
+            "source": {
+              "label": "Fraley、Waller & Brennan（2000）· 成人依恋的焦虑与回避维度",
+              "url": "https://doi.org/10.1037/0022-3514.78.2.350"
+            }
+          },
+          "promptWeightPercent": 15,
+          "promptWeight": 0.15,
+          "promptWeightLabel": "15%"
+        },
+        {
+          "t": "你能接受伴侣保留多少不向你公开的私人空间？",
+          "h": "这里测量的是亲密中的自主—透明边界，不把任一端视为更健康。",
+          "type": "scale",
+          "lo": "偏向高度透明",
+          "hi": "偏向高度自主",
+          "evidence": {
+            "construct": "亲密中的自主边界",
+            "reason": "以连续维度记录透明与私人空间的平衡，不做类型化诊断。",
+            "source": {
+              "label": "Fraley、Waller & Brennan（2000）· 成人依恋的焦虑与回避维度",
+              "url": "https://doi.org/10.1037/0022-3514.78.2.350"
+            }
+          },
+          "promptWeightPercent": 11,
+          "promptWeight": 0.11,
+          "promptWeightLabel": "11%"
+        },
+        {
+          "t": "你现实中最常通过哪两种方式表达爱？",
+          "h": "选经常做的，而不是喜欢收到的。",
+          "type": "multi",
+          "max": 2,
+          "o": [
+            "直接说爱",
+            "花时间陪伴",
+            "照顾生活细节",
+            "送礼或惊喜",
+            "身体接触",
+            "替对方解决问题",
+            "分享秘密",
+            "纳入未来计划",
+            "其他（请在文字回答中补充）"
+          ],
+          "evidence": {
+            "construct": "关系维护行为",
+            "reason": "表达爱被拆为开放、保证、积极互动、分担与支持等可观察行为。",
+            "source": {
+              "label": "Rusbult、Martz & Agnew（1998）· 亲密关系投入模型",
+              "url": "https://doi.org/10.1111/j.1475-6811.1998.tb00177.x"
+            }
+          },
+          "promptWeightPercent": 10,
+          "promptWeight": 0.1,
+          "promptWeightLabel": "10%"
+        },
+        {
+          "t": "最近一次吃醋或不安全时，你表现成了什么？",
+          "h": "没有类似经历可以直接说明。",
+          "type": "single",
+          "o": [
+            "直接表达",
+            "试探或玩笑",
+            "变冷淡",
+            "观察但不说",
+            "否认感受",
+            "寻求确认",
+            "很少出现",
+            "其他（请在文字回答中补充）"
+          ],
+          "evidence": {
+            "construct": "不安全感的表达",
+            "reason": "具体外显反应比“是否爱吃醋”更能区分依恋调节策略。",
+            "source": {
+              "label": "Fraley、Waller & Brennan（2000）· 成人依恋的焦虑与回避维度",
+              "url": "https://doi.org/10.1037/0022-3514.78.2.350"
+            }
+          },
+          "promptWeightPercent": 10,
+          "promptWeight": 0.1,
+          "promptWeightLabel": "10%"
+        },
+        {
+          "t": "哪些行为会永久改变你对伴侣的信任？",
+          "h": "可以补充是否存在修复条件。",
+          "type": "multi",
+          "o": [
+            "身体出轨",
+            "情感依赖他人",
+            "长期撒谎",
+            "泄露秘密",
+            "关键时刻不支持",
+            "财务欺骗",
+            "公开贬低",
+            "与前任越界",
+            "其他（请在文字回答中补充）"
+          ],
+          "evidence": {
+            "construct": "信任破裂与修复条件",
+            "reason": "识别会改变承诺、满意和继续投入判断的事件类别。",
+            "source": {
+              "label": "Rusbult、Martz & Agnew（1998）· 亲密关系投入模型",
+              "url": "https://doi.org/10.1111/j.1475-6811.1998.tb00177.x"
+            }
+          },
+          "promptWeightPercent": 16,
+          "promptWeight": 0.16,
+          "promptWeightLabel": "16%"
+        },
+        {
+          "t": "爱情与个人发展冲突时，你现实中更可能牺牲什么？能牺牲多久？",
+          "h": "短期让步和长期放弃应分开回答。",
+          "type": "open",
+          "evidence": {
+            "construct": "关系与个人发展的权衡",
+            "reason": "同时观察自主需要、关系需要、投入规模及时间边界。",
+            "source": {
+              "label": "Deci & Ryan（2000）· 自我决定理论",
+              "url": "https://doi.org/10.1207/S15327965PLI1104_01"
+            }
+          },
+          "promptWeightPercent": 13,
+          "promptWeight": 0.13,
+          "promptWeightLabel": "13%"
+        },
+        {
+          "t": "你想念一个人，却又不愿显得太主动时，会发出什么消息？",
+          "h": "直接模拟聊天原话。",
+          "type": "open",
+          "evidence": {
+            "construct": "亲密语域样本",
+            "reason": "模拟消息直接采集主动程度、含蓄度、称呼和关系语气。",
+            "source": {
+              "label": "Pennebaker & King（1999）· 语言风格的稳定个体差异",
+              "url": "https://doi.org/10.1037/0022-3514.77.6.1296"
+            }
+          },
+          "promptWeightPercent": 10,
+          "promptWeight": 0.1,
+          "promptWeightLabel": "10%"
+        }
+      ],
+      "promptWeightRationale": "关系支柱、冲突修复和信任断裂决定亲密关系核心；表达样本与情境行为共同补充。"
+    },
+    {
+      "id": "social",
+      "name": "人际、冲突与边界",
+      "desc": "信任、拒绝、道歉、原谅与关系距离",
+      "questions": [
+        {
+          "t": "最近一次你真正开始信任一个人，是对方做了什么，而不是说了什么？",
+          "h": "写出让信任变化的具体行为。",
+          "type": "open",
+          "evidence": {
+            "construct": "信任形成证据",
+            "reason": "询问使信任上升的行为，覆盖可预测性与可靠性而非只问好感。",
+            "source": {
+              "label": "Rempel、Holmes & Zanna（1985）· 人际信任的可预测性、可靠性与信念",
+              "url": "https://doi.org/10.1037/0022-3514.49.1.95"
+            }
+          },
+          "promptWeightPercent": 14,
+          "promptWeight": 0.14,
+          "promptWeightLabel": "14%"
+        },
+        {
+          "t": "朋友做错事时，你最近一次先做的是安慰、指出，还是保持距离？",
+          "h": "补充你的第一句话。",
+          "type": "single",
+          "o": [
+            "先安慰",
+            "先指出问题",
+            "先了解事实",
+            "先保持距离",
+            "看是否伤害别人",
+            "其他（请在文字回答中补充）"
+          ],
+          "evidence": {
+            "construct": "支持与纠错次序",
+            "reason": "记录冲突中的第一动作和原话，建立关系情境响应规则。",
+            "source": {
+              "label": "Jayawickreme 等（2021）· 人格动力与情境变化",
+              "url": "https://doi.org/10.5964/ps.6179"
+            }
+          },
+          "promptWeightPercent": 11,
+          "promptWeight": 0.11,
+          "promptWeightLabel": "11%"
+        },
+        {
+          "t": "别人第一次越过你的边界时，你现实中通常怎么做？",
+          "h": "不是“应该怎样”，而是最常发生的反应。",
+          "type": "single",
+          "o": [
+            "第一次就说",
+            "第二次确认后说",
+            "忍到明显不舒服",
+            "不说但逐渐疏远",
+            "看关系亲疏",
+            "其他（请在文字回答中补充）"
+          ],
+          "evidence": {
+            "construct": "边界被越过后的行为",
+            "reason": "比较表达、容忍与疏远，避免用“边界感强弱”单一标签。",
+            "source": {
+              "label": "Jayawickreme 等（2021）· 人格动力与情境变化",
+              "url": "https://doi.org/10.5964/ps.6179"
+            }
+          },
+          "promptWeightPercent": 15,
+          "promptWeight": 0.15,
+          "promptWeightLabel": "15%"
+        },
+        {
+          "t": "别人求助时，什么条件下你一定帮，什么条件下一定拒绝？",
+          "h": "区分关系、人情、能力、代价和对方是否自助。",
+          "type": "open",
+          "evidence": {
+            "construct": "帮助与拒绝条件",
+            "reason": "以关系、能力、成本和互惠条件建立可迁移的帮助决策规则。",
+            "source": {
+              "label": "Bruine de Bruin、Parker & Fischhoff（2007）· 成人决策能力",
+              "url": "https://doi.org/10.1037/0022-3514.92.5.938"
+            }
+          },
+          "promptWeightPercent": 14,
+          "promptWeight": 0.14,
+          "promptWeightLabel": "14%"
+        },
+        {
+          "t": "群体意见与你不同时，你现实中有多可能公开表达？",
+          "h": "请按真实行为作答，并在文字中补充权力差异与风险是否会改变选择。",
+          "type": "scale",
+          "lo": "通常不公开表达",
+          "hi": "通常直接表达",
+          "evidence": {
+            "construct": "群体异议表达",
+            "reason": "将表达倾向放回权力差异和风险情境中解释。",
+            "source": {
+              "label": "Jayawickreme 等（2021）· 人格动力与情境变化",
+              "url": "https://doi.org/10.5964/ps.6179"
+            }
+          },
+          "promptWeightPercent": 10,
+          "promptWeight": 0.1,
+          "promptWeightLabel": "10%"
+        },
+        {
+          "t": "怎样的道歉会让你相信对方真的理解了伤害？",
+          "h": "区分道歉、信任恢复和继续来往。",
+          "type": "open",
+          "evidence": {
+            "construct": "道歉与信任恢复",
+            "reason": "区分理解伤害、承担责任、补救和长期行为改变。",
+            "source": {
+              "label": "Rempel、Holmes & Zanna（1985）· 人际信任的可预测性、可靠性与信念",
+              "url": "https://doi.org/10.1037/0022-3514.49.1.95"
+            }
+          },
+          "promptWeightPercent": 12,
+          "promptWeight": 0.12,
+          "promptWeightLabel": "12%"
+        },
+        {
+          "t": "分别写一句：拒绝陌生人的请求、拒绝亲近之人的请求。",
+          "h": "观察关系是否改变你的直接程度。",
+          "type": "open",
+          "evidence": {
+            "construct": "关系距离与拒绝语气",
+            "reason": "平行情境语料可以识别对陌生人与亲近者的语域变化。",
+            "source": {
+              "label": "Pennebaker & King（1999）· 语言风格的稳定个体差异",
+              "url": "https://doi.org/10.1037/0022-3514.77.6.1296"
+            }
+          },
+          "promptWeightPercent": 10,
+          "promptWeight": 0.1,
+          "promptWeightLabel": "10%"
+        },
+        {
+          "t": "原谅对你而言是否意味着恢复关系？什么行为即使原谅也不会再信任？",
+          "h": "不要求讲具体伤害事件。",
+          "type": "open",
+          "evidence": {
+            "construct": "原谅、信任与关系恢复",
+            "reason": "把三者拆开，避免模型错误地将原谅等同于恢复亲密。",
+            "source": {
+              "label": "Rempel、Holmes & Zanna（1985）· 人际信任的可预测性、可靠性与信念",
+              "url": "https://doi.org/10.1037/0022-3514.49.1.95"
+            }
+          },
+          "promptWeightPercent": 14,
+          "promptWeight": 0.14,
+          "promptWeightLabel": "14%"
+        }
+      ],
+      "promptWeightRationale": "信任形成、边界执行、求助规则及原谅后的关系处理最能预测现实人际行为。"
+    },
+    {
+      "id": "language",
+      "name": "语言与表达",
+      "desc": "词汇、句长、幽默与关系语域",
+      "questions": [
+        {
+          "t": "熟悉你的人会用哪三种感觉描述你的日常说话方式？",
+          "h": "尽量选别人真实评价过的。",
+          "type": "multi",
+          "max": 3,
+          "o": [
+            "简短直接",
+            "温和委婉",
+            "理性克制",
+            "活泼跳跃",
+            "冷幽默",
+            "犀利吐槽",
+            "细腻感性",
+            "正式严谨",
+            "随意口语",
+            "喜欢反问",
+            "喜欢比喻",
+            "带一点撒娇",
+            "其他（请在文字回答中补充）"
+          ],
+          "evidence": {
+            "construct": "自评语言特征",
+            "reason": "结构化描述用于初筛，但会由后续自然语料校准。",
+            "source": {
+              "label": "Pennebaker & King（1999）· 语言风格的稳定个体差异",
+              "url": "https://doi.org/10.1037/0022-3514.77.6.1296"
+            }
+          },
+          "promptWeightPercent": 14,
+          "promptWeight": 0.14,
+          "promptWeightLabel": "14%"
+        },
+        {
+          "t": "朋友说：“我努力很久还是失败了，我觉得自己特别没用。”请直接回复他。",
+          "h": "不要解释沟通原则，只写你真实会说的话。",
+          "type": "open",
+          "evidence": {
+            "construct": "共情回应样本",
+            "reason": "同一情境下的直接回复提供句长、情绪词和建议倾向。",
+            "source": {
+              "label": "Pennebaker & King（1999）· 语言风格的稳定个体差异",
+              "url": "https://doi.org/10.1037/0022-3514.77.6.1296"
+            }
+          },
+          "promptWeightPercent": 18,
+          "promptWeight": 0.18,
+          "promptWeightLabel": "18%"
+        },
+        {
+          "t": "对方的观点你不认同，但你也承认他有一部分道理。请直接回复。",
+          "h": "写两三句话即可。",
+          "type": "open",
+          "evidence": {
+            "construct": "异议表达样本",
+            "reason": "采集缓和语、承认部分合理性及反驳顺序。",
+            "source": {
+              "label": "Pennebaker & King（1999）· 语言风格的稳定个体差异",
+              "url": "https://doi.org/10.1037/0022-3514.77.6.1296"
+            }
+          },
+          "promptWeightPercent": 17,
+          "promptWeight": 0.17,
+          "promptWeightLabel": "17%"
+        },
+        {
+          "t": "列出你常用的口头禅、语气词、表情和标点习惯。",
+          "h": "例如“其实”“怎么说呢”“……”；没有也可说明。",
+          "type": "open",
+          "evidence": {
+            "construct": "高频功能词与标点",
+            "reason": "口头禅、语气词和标点属于相对稳定的语言风格信号。",
+            "source": {
+              "label": "Pennebaker & King（1999）· 语言风格的稳定个体差异",
+              "url": "https://doi.org/10.1037/0022-3514.77.6.1296"
+            }
+          },
+          "promptWeightPercent": 12,
+          "promptWeight": 0.12,
+          "promptWeightLabel": "12%"
+        },
+        {
+          "t": "哪些词意思虽然正确，但你本人几乎绝不会说？",
+          "h": "可包含网络流行语、过度热情称呼或书面套话。",
+          "type": "open",
+          "evidence": {
+            "construct": "负向词汇偏好",
+            "reason": "“不会说什么”形成反例约束，减少只靠正例造成的风格漂移。",
+            "source": {
+              "label": "Pennebaker & King（1999）· 语言风格的稳定个体差异",
+              "url": "https://doi.org/10.1037/0022-3514.77.6.1296"
+            }
+          },
+          "promptWeightPercent": 8,
+          "promptWeight": 0.08,
+          "promptWeightLabel": "8%"
+        },
+        {
+          "t": "你自然聊天时更接近短句还是带背景的长句？",
+          "h": "按日常自然表达选择，不把正式写作混在一起。",
+          "type": "scale",
+          "lo": "极短、少背景",
+          "hi": "长句、背景充分",
+          "evidence": {
+            "construct": "句长与背景密度",
+            "reason": "连续评分作为自评锚点，后续以自然文本实际统计校准。",
+            "source": {
+              "label": "Pennebaker & King（1999）· 语言风格的稳定个体差异",
+              "url": "https://doi.org/10.1037/0022-3514.77.6.1296"
+            }
+          },
+          "promptWeightPercent": 8,
+          "promptWeight": 0.08,
+          "promptWeightLabel": "8%"
+        },
+        {
+          "t": "你的幽默最常来自哪两种方式？",
+          "h": "没有也可以选择“很少开玩笑”。",
+          "type": "multi",
+          "max": 2,
+          "o": [
+            "自嘲",
+            "冷幽默",
+            "夸张",
+            "反差",
+            "双关",
+            "吐槽",
+            "荒诞",
+            "一本正经说怪话",
+            "模仿别人",
+            "很少开玩笑",
+            "其他（请在文字回答中补充）"
+          ],
+          "evidence": {
+            "construct": "幽默策略",
+            "reason": "多选只记录常用策略，不把幽默风格当作人格优劣判断。",
+            "source": {
+              "label": "Pennebaker & King（1999）· 语言风格的稳定个体差异",
+              "url": "https://doi.org/10.1037/0022-3514.77.6.1296"
+            }
+          },
+          "promptWeightPercent": 8,
+          "promptWeight": 0.08,
+          "promptWeightLabel": "8%"
+        },
+        {
+          "t": "自然讲述一件今天发生的小事，保持平常语速，不用刻意展示性格。",
+          "h": "可使用录音回答，学习停顿、重音和叙述节奏。",
+          "type": "open",
+          "evidence": {
+            "construct": "自然叙事基线",
+            "reason": "低表演压力的日常叙述更适合估计真实词汇、停顿和节奏。",
+            "source": {
+              "label": "Pennebaker & King（1999）· 语言风格的稳定个体差异",
+              "url": "https://doi.org/10.1037/0022-3514.77.6.1296"
+            }
+          },
+          "promptWeightPercent": 15,
+          "promptWeight": 0.15,
+          "promptWeightLabel": "15%"
+        }
+      ],
+      "promptWeightRationale": "直接回应样本和自然叙事比自我描述更能预测实际语言；词汇禁区、句长和幽默作为细节修正。"
+    },
+    {
+      "id": "imitation",
+      "name": "模仿校准",
+      "desc": "候选回复对比、原话改写与反例",
+      "questions": [
+        {
+          "t": "一个熟悉的人凌晨两点发来“睡了吗”，你最可能怎么回？",
+          "h": "可以按关系远近写两个版本。",
+          "type": "open",
+          "evidence": {
+            "construct": "低成本关系开场",
+            "reason": "夜间短消息可采集即时语气、关心程度和关系差异。",
+            "source": {
+              "label": "Pennebaker & King（1999）· 语言风格的稳定个体差异",
+              "url": "https://doi.org/10.1037/0022-3514.77.6.1296"
+            }
+          },
+          "promptWeightPercent": 15,
+          "promptWeight": 0.15,
+          "promptWeightLabel": "15%"
+        },
+        {
+          "t": "有人很认真地夸你，你现实中怎样接住这句夸奖？",
+          "h": "直接写原话，不必表现谦虚。",
+          "type": "open",
+          "evidence": {
+            "construct": "接受赞美的自然回复",
+            "reason": "避免社会期许式描述，直接保留真实措辞。",
+            "source": {
+              "label": "Pennebaker & King（1999）· 语言风格的稳定个体差异",
+              "url": "https://doi.org/10.1037/0022-3514.77.6.1296"
+            }
+          },
+          "promptWeightPercent": 13,
+          "promptWeight": 0.13,
+          "promptWeightLabel": "13%"
+        },
+        {
+          "t": "下面哪句安慰最不像你？选完后把它改成你的说法。",
+          "h": "反例通常比自我描述更准确。",
+          "type": "single",
+          "o": [
+            "别想太多，都会过去的",
+            "我在，你想说多少都可以",
+            "我们先看看现在能做什么",
+            "这确实很难受",
+            "先睡一觉，明天再说",
+            "其他（请在文字回答中补充）"
+          ],
+          "evidence": {
+            "construct": "反例与改写",
+            "reason": "“最不像”加自主改写形成对比样本，提高风格边界清晰度。",
+            "source": {
+              "label": "Pennebaker & King（1999）· 语言风格的稳定个体差异",
+              "url": "https://doi.org/10.1037/0022-3514.77.6.1296"
+            }
+          },
+          "promptWeightPercent": 15,
+          "promptWeight": 0.15,
+          "promptWeightLabel": "15%"
+        },
+        {
+          "t": "面对一个明显荒谬的问题，你对亲近的人会怎么回？对陌生人呢？",
+          "h": "直接写两个版本。",
+          "type": "open",
+          "evidence": {
+            "construct": "跨关系语域对比",
+            "reason": "相同荒谬刺激下比较亲近与陌生关系的表达变化。",
+            "source": {
+              "label": "Jayawickreme 等（2021）· 人格动力与情境变化",
+              "url": "https://doi.org/10.5964/ps.6179"
+            }
+          },
+          "promptWeightPercent": 14,
+          "promptWeight": 0.14,
+          "promptWeightLabel": "14%"
+        },
+        {
+          "t": "朋友正在重复同一个错误，请用你的语气提醒他。",
+          "h": "允许直接、犀利或保持克制。",
+          "type": "open",
+          "evidence": {
+            "construct": "重复错误的提醒语气",
+            "reason": "采集关心、直接性、责任归因和容忍边界。",
+            "source": {
+              "label": "Pennebaker & King（1999）· 语言风格的稳定个体差异",
+              "url": "https://doi.org/10.1037/0022-3514.77.6.1296"
+            }
+          },
+          "promptWeightPercent": 14,
+          "promptWeight": 0.14,
+          "promptWeightLabel": "14%"
+        },
+        {
+          "t": "表达开心，但不要使用“开心”“高兴”两个词。",
+          "h": "越像日常聊天越好。",
+          "type": "open",
+          "evidence": {
+            "construct": "受限表达生成",
+            "reason": "禁止高频情绪词，观察用户替代表达和隐喻习惯。",
+            "source": {
+              "label": "Pennebaker & King（1999）· 语言风格的稳定个体差异",
+              "url": "https://doi.org/10.1037/0022-3514.77.6.1296"
+            }
+          },
+          "promptWeightPercent": 8,
+          "promptWeight": 0.08,
+          "promptWeightLabel": "8%"
+        },
+        {
+          "t": "桌宠说了一句意思正确、语气却不像你的话，你最愿意怎样纠正？",
+          "h": "决定后续的低负担校准方式。",
+          "type": "multi",
+          "max": 2,
+          "o": [
+            "点“不像我”",
+            "直接改写",
+            "选择更像的候选",
+            "指出哪个词不像",
+            "录一段我的说法",
+            "说明当时情绪",
+            "其他（请在文字回答中补充）"
+          ],
+          "evidence": {
+            "construct": "偏好反馈通道",
+            "reason": "选择低负担校准方式，决定持续学习时如何获得可靠反馈。",
+            "source": {
+              "label": "Bruine de Bruin、Parker & Fischhoff（2007）· 成人决策能力",
+              "url": "https://doi.org/10.1037/0022-3514.92.5.938"
+            }
+          },
+          "promptWeightPercent": 10,
+          "promptWeight": 0.1,
+          "promptWeightLabel": "10%"
+        },
+        {
+          "t": "写一句只有熟悉你的人才会觉得“这很像你”的话。",
+          "h": "可以平凡、奇怪、有梗或带个人节奏。",
+          "type": "open",
+          "evidence": {
+            "construct": "高辨识度个人语句",
+            "reason": "由用户提供自认为典型的正例，再用对话行为持续验证。",
+            "source": {
+              "label": "Pennebaker & King（1999）· 语言风格的稳定个体差异",
+              "url": "https://doi.org/10.1037/0022-3514.77.6.1296"
+            }
+          },
+          "promptWeightPercent": 11,
+          "promptWeight": 0.11,
+          "promptWeightLabel": "11%"
+        }
+      ],
+      "promptWeightRationale": "多种真实互动任务用于交叉校准语气；单一修辞约束只提供有限证据。"
+    },
+    {
+      "id": "history",
+      "name": "经历与个人知识",
+      "desc": "观点来源、重要人物、专长与知识边界",
+      "questions": [
+        {
+          "t": "哪一段经历最明显改变了你处理事情或看待人的方式？",
+          "h": "只写愿意保存的部分，可隐去人物和地点。",
+          "type": "open",
+          "evidence": {
+            "construct": "转折经历与意义建构",
+            "reason": "重要经历通过重构过去与现在，形成持续演化的身份叙事。",
+            "source": {
+              "label": "McAdams & McLean（2013）· 叙事身份",
+              "url": "https://doi.org/10.1177/0963721413475622"
+            }
+          },
+          "promptWeightPercent": 14,
+          "promptWeight": 0.14,
+          "promptWeightLabel": "14%"
+        },
+        {
+          "t": "谁对你的性格影响最大？他留下了什么，而你又拒绝继承什么？",
+          "h": "可以使用角色称呼。",
+          "type": "open",
+          "evidence": {
+            "construct": "重要他人与选择性继承",
+            "reason": "区分外部影响、内化价值与主动拒绝的部分。",
+            "source": {
+              "label": "McAdams & McLean（2013）· 叙事身份",
+              "url": "https://doi.org/10.1177/0963721413475622"
+            }
+          },
+          "promptWeightPercent": 12,
+          "promptWeight": 0.12,
+          "promptWeightLabel": "12%"
+        },
+        {
+          "t": "哪些领域可以让桌宠以“你的个人知识”回答？",
+          "h": "立场与专业知识会分开存储。",
+          "type": "multi",
+          "o": [
+            "专业工作",
+            "学术知识",
+            "生活技能",
+            "艺术创作",
+            "游戏动漫",
+            "科技数码",
+            "人际情感",
+            "历史文化",
+            "商业财经",
+            "健康运动",
+            "其他"
+          ],
+          "evidence": {
+            "construct": "个人知识授权边界",
+            "reason": "先声明可回答领域，避免把个人立场误当专业事实。",
+            "source": {
+              "label": "Bruine de Bruin、Parker & Fischhoff（2007）· 成人决策能力",
+              "url": "https://doi.org/10.1037/0022-3514.92.5.938"
+            }
+          },
+          "promptWeightPercent": 13,
+          "promptWeight": 0.13,
+          "promptWeightLabel": "13%"
+        },
+        {
+          "t": "哪些事情你有强烈观点，但并不认为自己是专家？",
+          "h": "系统会保存为个人立场，而不是可靠事实。",
+          "type": "open",
+          "evidence": {
+            "construct": "强观点与专业度分离",
+            "reason": "记录认识论置信边界，降低桌宠过度自信。",
+            "source": {
+              "label": "Bruine de Bruin、Parker & Fischhoff（2007）· 成人决策能力",
+              "url": "https://doi.org/10.1037/0022-3514.92.5.938"
+            }
+          },
+          "promptWeightPercent": 10,
+          "promptWeight": 0.1,
+          "promptWeightLabel": "10%"
+        },
+        {
+          "t": "列出最能代表你的三个喜欢和三个不喜欢。",
+          "h": "作品、人物、食物、环境或生活方式都可以。",
+          "type": "open",
+          "evidence": {
+            "construct": "偏好与反偏好锚点",
+            "reason": "具体对象为抽象身份主题提供可验证的生活证据。",
+            "source": {
+              "label": "McAdams & McLean（2013）· 叙事身份",
+              "url": "https://doi.org/10.1177/0963721413475622"
+            }
+          },
+          "promptWeightPercent": 7,
+          "promptWeight": 0.07,
+          "promptWeightLabel": "7%"
+        },
+        {
+          "t": "哪些往事可以由桌宠主动提起？哪些只能在你先提起时谈？",
+          "h": "这是记忆触发设置，不要求披露事件内容。",
+          "type": "open",
+          "evidence": {
+            "construct": "记忆触发边界",
+            "reason": "将可主动提及与仅被动回应分开，减少敏感记忆误触发。",
+            "source": {
+              "label": "McAdams & McLean（2013）· 叙事身份",
+              "url": "https://doi.org/10.1177/0963721413475622"
+            }
+          },
+          "promptWeightPercent": 14,
+          "promptWeight": 0.14,
+          "promptWeightLabel": "14%"
+        },
+        {
+          "t": "哪些关于你的事实一旦变化，桌宠必须优先相信最新确认？",
+          "h": "例如工作、关系、居住地、健康状态或称呼。",
+          "type": "open",
+          "evidence": {
+            "construct": "时效性事实更新",
+            "reason": "明确动态事实优先级，避免旧记忆压过用户最新确认。",
+            "source": {
+              "label": "Bruine de Bruin、Parker & Fischhoff（2007）· 成人决策能力",
+              "url": "https://doi.org/10.1037/0022-3514.92.5.938"
+            }
+          },
+          "promptWeightPercent": 16,
+          "promptWeight": 0.16,
+          "promptWeightLabel": "16%"
+        },
+        {
+          "t": "桌宠不知道一件关于你的事时，应该怎样做？",
+          "h": "可以区分轻松话题和敏感话题。",
+          "type": "single",
+          "o": [
+            "优先询问我",
+            "明确说不知道",
+            "低风险时推测并注明",
+            "根据已有记忆推断",
+            "敏感内容绝不推断",
+            "其他（请在文字回答中补充）"
+          ],
+          "evidence": {
+            "construct": "未知信息处理规则",
+            "reason": "在询问、承认未知和低风险推断之间建立清晰边界。",
+            "source": {
+              "label": "Bruine de Bruin、Parker & Fischhoff（2007）· 成人决策能力",
+              "url": "https://doi.org/10.1037/0022-3514.92.5.938"
+            }
+          },
+          "promptWeightPercent": 14,
+          "promptWeight": 0.14,
+          "promptWeightLabel": "14%"
+        }
+      ],
+      "promptWeightRationale": "事实更新、未知处理和记忆触发边界直接控制长期记忆安全；喜恶清单仅作低风险细节。"
+    },
+    {
+      "id": "private-archive",
+      "name": "私人档案",
+      "desc": "称呼、重要关系、家庭、人生事件与当前生活背景",
+      "category": "private",
+      "coreCount": 6,
+      "questions": [
+        {
+          "t": "你希望桌宠怎样称呼你？请写下常用姓名或昵称、亲近时可用的称呼，以及绝对不希望使用的称呼。",
+          "h": "只填写愿意保存的称呼；这决定桌宠在不同亲密程度下如何叫你。",
+          "type": "open",
+          "evidence": {
+            "kind": "private",
+            "construct": "称呼与身份边界",
+            "reason": "称呼是高频互动信息，能直接影响亲近感和冒犯风险；不参与人格评分。",
+            "source": {
+              "label": "Northwestern Study of Lives · Life Story Interview II",
+              "url": "https://sites.northwestern.edu/studyoflivesresearchgroup/instruments/"
+            }
+          },
+          "promptWeightPercent": 7,
+          "promptWeight": 0.07,
+          "promptWeightLabel": "7%"
+        },
+        {
+          "t": "你愿意保存哪些基础背景？可包括生日或年龄阶段、成长地、常住地，以及对你重要的地域、文化、民族、宗教或性别身份。",
+          "h": "生日只用于纪念或生活阶段背景，星座等标签只作自我叙事；不得据此推断人格。",
+          "type": "open",
+          "evidence": {
+            "kind": "private",
+            "construct": "个人背景与纪念信息",
+            "reason": "背景帮助理解语言、习俗和生命阶段，但不是性格测量工具；不必填写精确日期。",
+            "source": {
+              "label": "Northwestern Study of Lives · Life Story Interview II",
+              "url": "https://sites.northwestern.edu/studyoflivesresearchgroup/instruments/"
+            }
+          },
+          "promptWeightPercent": 4,
+          "promptWeight": 0.04,
+          "promptWeightLabel": "4%"
+        },
+        {
+          "t": "你的原生家庭和成长环境大致是什么样的？家人怎样表达爱、处理冲突和谈论情绪？哪些影响你保留了，哪些努力摆脱了？",
+          "h": "可以只写氛围和相处方式，不要求披露创伤、姓名或住址。",
+          "type": "open",
+          "evidence": {
+            "kind": "private",
+            "construct": "家庭叙事与代际影响",
+            "reason": "家庭故事有助于理解关系脚本和自我连续性，但不能据此作临床诊断。",
+            "source": {
+              "label": "Northwestern Study of Lives · Life Story Interview II",
+              "url": "https://sites.northwestern.edu/studyoflivesresearchgroup/instruments/"
+            }
+          },
+          "promptWeightPercent": 11,
+          "promptWeight": 0.11,
+          "promptWeightLabel": "11%"
+        },
+        {
+          "t": "现在对你最重要、最爱或最牵挂的人有哪些？你们是什么关系？你为什么在意他们，希望桌宠如何谈到他们？",
+          "h": "不强迫只选一个“最爱的人”；可用角色称呼，并设置不主动提起的人。",
+          "type": "open",
+          "evidence": {
+            "kind": "private",
+            "construct": "重要关系地图",
+            "reason": "重要关系是自传体记忆社会功能的重要组成部分，也决定桌宠称谓和谈话边界。",
+            "source": {
+              "label": "Bluck 等（2005）· 自传体记忆的自我、社会与指导功能",
+              "url": "https://doi.org/10.1521/soco.23.1.91.59198"
+            }
+          },
+          "promptWeightPercent": 10,
+          "promptWeight": 0.1,
+          "promptWeightLabel": "10%"
+        },
+        {
+          "t": "成长过程中，哪段最早或最深刻的记忆最能说明“你后来为什么成为现在的你”？",
+          "h": "不必追求记忆绝对准确，重点是你现在如何理解它；不愿回忆可不答。",
+          "type": "open",
+          "evidence": {
+            "kind": "private",
+            "construct": "自我定义记忆",
+            "reason": "自传体记忆会被用于维持自我连续性并解释当前身份。",
+            "source": {
+              "label": "Bluck 等（2005）· 自传体记忆的自我、社会与指导功能",
+              "url": "https://doi.org/10.1521/soco.23.1.91.59198"
+            }
+          },
+          "promptWeightPercent": 10,
+          "promptWeight": 0.1,
+          "promptWeightLabel": "10%"
+        },
+        {
+          "t": "你经历过最艰难或最痛苦、同时又愿意让桌宠知道的事情是什么？它改变了你的哪些选择、边界或敏感点？",
+          "h": "只写愿意保存的层级；可以只写影响，不写事件经过。桌宠不得主动追问。",
+          "type": "open",
+          "evidence": {
+            "kind": "private",
+            "construct": "低谷经历与后续影响",
+            "reason": "低谷事件可影响现在的回避、保护和意义建构，但必须以用户控制和最小披露为前提。",
+            "source": {
+              "label": "Northwestern Study of Lives · Life Story Interview II",
+              "url": "https://sites.northwestern.edu/studyoflivesresearchgroup/instruments/"
+            }
+          },
+          "promptWeightPercent": 9,
+          "promptWeight": 0.09,
+          "promptWeightLabel": "9%"
+        },
+        {
+          "t": "你最自豪的一件事是什么？真正让你自豪的是结果、过程、克服的困难，还是它对别人的意义？",
+          "h": "请说明“为什么自豪”，帮助区分成就本身与背后的价值。",
+          "type": "open",
+          "evidence": {
+            "kind": "private",
+            "construct": "高点经历与价值来源",
+            "reason": "人生高点能提供能动性、胜任感和价值优先级的具体证据。",
+            "source": {
+              "label": "Northwestern Study of Lives · Life Story Interview II",
+              "url": "https://sites.northwestern.edu/studyoflivesresearchgroup/instruments/"
+            }
+          },
+          "promptWeightPercent": 8,
+          "promptWeight": 0.08,
+          "promptWeightLabel": "8%"
+        },
+        {
+          "t": "哪些重要的情感或亲密关系经历改变了你对爱情、承诺、信任或分离的理解？",
+          "h": "不要求列出所有恋爱经历；只写真正改变过你的片段，也可说明没有相关经历。",
+          "type": "open",
+          "evidence": {
+            "kind": "private",
+            "construct": "亲密关系经历",
+            "reason": "该题补充“爱情与亲密”模块没有覆盖的个人关系历史，不重复询问理想伴侣标准。",
+            "source": {
+              "label": "Northwestern Study of Lives · Life Story Interview II",
+              "url": "https://sites.northwestern.edu/studyoflivesresearchgroup/instruments/"
+            }
+          },
+          "promptWeightPercent": 9,
+          "promptWeight": 0.09,
+          "promptWeightLabel": "9%"
+        },
+        {
+          "t": "哪件事曾让你最受感动，或让你突然觉得“人是值得相信的”？当时真正打动你的是什么？",
+          "h": "可以是很小的日常事件；重点是触发感动的行为或意义。",
+          "type": "open",
+          "evidence": {
+            "kind": "private",
+            "construct": "感动与信任恢复线索",
+            "reason": "积极自传体记忆有助于识别联结、关怀和希望的个人触发点。",
+            "source": {
+              "label": "Bluck 等（2005）· 自传体记忆的自我、社会与指导功能",
+              "url": "https://doi.org/10.1521/soco.23.1.91.59198"
+            }
+          },
+          "promptWeightPercent": 6,
+          "promptWeight": 0.06,
+          "promptWeightLabel": "6%"
+        },
+        {
+          "t": "你最憎恶、最难容忍的行为是什么？是行为本身、背后的动机，还是它造成的后果让你反感？",
+          "h": "请区分一般不喜欢、明确边界和绝不接受，避免把一时情绪当永久原则。",
+          "type": "open",
+          "evidence": {
+            "kind": "private",
+            "construct": "厌恶对象与边界原因",
+            "reason": "追问动机和后果可避免只保存情绪化标签，并与专业价值题形成互补。",
+            "source": {
+              "label": "Bluck 等（2005）· 自传体记忆的自我、社会与指导功能",
+              "url": "https://doi.org/10.1521/soco.23.1.91.59198"
+            }
+          },
+          "promptWeightPercent": 8,
+          "promptWeight": 0.08,
+          "promptWeightLabel": "8%"
+        },
+        {
+          "t": "最近让你印象最深、反复想到或最牵挂的事情是什么？你希望桌宠记住事实、感受，还是后续进展？",
+          "h": "这是动态资料，应允许随时更新或过期，不会被固化为稳定人格。",
+          "type": "open",
+          "evidence": {
+            "kind": "private",
+            "construct": "近期显著事件与当前关注",
+            "reason": "近期事件提供当前语境，但必须与长期人格分层保存并设置时效。",
+            "source": {
+              "label": "Bluck 等（2005）· 自传体记忆的自我、社会与指导功能",
+              "url": "https://doi.org/10.1521/soco.23.1.91.59198"
+            }
+          },
+          "promptWeightPercent": 5,
+          "promptWeight": 0.05,
+          "promptWeightLabel": "5%"
+        },
+        {
+          "t": "你现在最想实现的愿望是什么？如果未来三年进入理想的新篇章，你希望哪些事情发生、哪些东西保持不变？",
+          "h": "这补充的是当前具体愿望，不替代“人生与意义”模块中的长期价值。",
+          "type": "open",
+          "evidence": {
+            "kind": "private",
+            "construct": "当前愿望与未来脚本",
+            "reason": "未来脚本连接当前目标与身份连续性，适合动态更新而非永久定型。",
+            "source": {
+              "label": "Northwestern Study of Lives · Life Story Interview II",
+              "url": "https://sites.northwestern.edu/studyoflivesresearchgroup/instruments/"
+            }
+          },
+          "promptWeightPercent": 7,
+          "promptWeight": 0.07,
+          "promptWeightLabel": "7%"
+        },
+        {
+          "t": "什么最能构成你的日常生活质感？请描述典型一天、固定小仪式、让你安心的地方或物品，以及容易被忽略的小偏好。",
+          "h": "已有“喜欢与不喜欢”无需重复罗列；这里关注习惯、场景和生活节奏。",
+          "type": "open",
+          "evidence": {
+            "kind": "private",
+            "construct": "日常生活纹理",
+            "reason": "日常细节让桌宠的陪伴和主动关心更自然，也能减少只靠重大事件塑造人格的偏差。",
+            "source": {
+              "label": "Bluck 等（2005）· 自传体记忆的自我、社会与指导功能",
+              "url": "https://doi.org/10.1521/soco.23.1.91.59198"
+            }
+          },
+          "promptWeightPercent": 6,
+          "promptWeight": 0.06,
+          "promptWeightLabel": "6%"
+        }
+      ],
+      "promptWeightRationale": "家庭、重要关系和自我定义记忆提供高信息背景；敏感创伤不过度加权，近期事件按动态资料低权重处理。"
+    }
+  ],
+  "avatars": [
+    {
+      "id": "builtin-avatar-01",
+      "name": "Capricorn",
+      "code": "builtin-01/frame-01",
+      "frameCodes": [
+        "builtin-01/frame-01",
+        "builtin-01/frame-02",
+        "builtin-01/frame-03",
+        "builtin-01/frame-04",
+        "builtin-01/frame-05",
+        "builtin-01/frame-06",
+        "builtin-01/frame-07",
+        "builtin-01/frame-08",
+        "builtin-01/frame-09",
+        "builtin-01/frame-10"
+      ],
+      "interactionProfile": "Capricorn",
+      "interactionFrames": [
+        1,
+        3,
+        4,
+        9,
+        6,
+        2,
+        7,
+        5,
+        8,
+        10
+      ],
+      "index": 0,
+      "source": "builtin",
+      "deletable": false
+    },
+    {
+      "id": "builtin-avatar-02",
+      "name": "Scorpio",
+      "code": "builtin-02/frame-01",
+      "frameCodes": [
+        "builtin-02/frame-01",
+        "builtin-02/frame-02",
+        "builtin-02/frame-03",
+        "builtin-02/frame-04",
+        "builtin-02/frame-05",
+        "builtin-02/frame-06",
+        "builtin-02/frame-07",
+        "builtin-02/frame-08",
+        "builtin-02/frame-09",
+        "builtin-02/frame-10"
+      ],
+      "interactionProfile": "Scorpio",
+      "interactionFrames": [
+        1,
+        3,
+        6,
+        2,
+        8,
+        4,
+        7,
+        5,
+        10,
+        9
+      ],
+      "index": 1,
+      "source": "builtin",
+      "deletable": false
+    },
+    {
+      "id": "builtin-avatar-03",
+      "name": "小鸡毛",
+      "code": "builtin-03/frame-01",
+      "frameCodes": [
+        "builtin-03/frame-01",
+        "builtin-03/frame-02",
+        "builtin-03/frame-03",
+        "builtin-03/frame-04",
+        "builtin-03/frame-05",
+        "builtin-03/frame-06",
+        "builtin-03/frame-07",
+        "builtin-03/frame-08",
+        "builtin-03/frame-09",
+        "builtin-03/frame-10"
+      ],
+      "interactionProfile": "小鸡毛",
+      "interactionFrames": [
+        1,
+        3,
+        2,
+        10,
+        6,
+        8,
+        4,
+        9,
+        5,
+        7
+      ],
+      "index": 2,
+      "source": "builtin",
+      "deletable": false
+    },
+    {
+      "id": "builtin-avatar-04",
+      "name": "哈基米",
+      "code": "builtin-04/frame-01",
+      "frameCodes": [
+        "builtin-04/frame-01",
+        "builtin-04/frame-02",
+        "builtin-04/frame-03",
+        "builtin-04/frame-04",
+        "builtin-04/frame-05",
+        "builtin-04/frame-06",
+        "builtin-04/frame-07",
+        "builtin-04/frame-08",
+        "builtin-04/frame-09",
+        "builtin-04/frame-10"
+      ],
+      "interactionProfile": "胖橘",
+      "interactionFrames": [
+        3,
+        8,
+        4,
+        10,
+        6,
+        2,
+        1,
+        7,
+        9,
+        5
+      ],
+      "index": 3,
+      "source": "builtin",
+      "deletable": false
+    },
+    {
+      "id": "builtin-avatar-05",
+      "name": "黑曼波",
+      "code": "builtin-05/frame-01",
+      "frameCodes": [
+        "builtin-05/frame-01",
+        "builtin-05/frame-02",
+        "builtin-05/frame-03",
+        "builtin-05/frame-04",
+        "builtin-05/frame-05",
+        "builtin-05/frame-06",
+        "builtin-05/frame-07",
+        "builtin-05/frame-08",
+        "builtin-05/frame-09",
+        "builtin-05/frame-10"
+      ],
+      "interactionProfile": "黑曼波",
+      "interactionFrames": [
+        2,
+        10,
+        1,
+        6,
+        5,
+        8,
+        9,
+        7,
+        4,
+        3
+      ],
+      "index": 4,
+      "source": "builtin",
+      "deletable": false
+    }
+  ]
+}

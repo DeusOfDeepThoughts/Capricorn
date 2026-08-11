@@ -1,0 +1,22 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="64" y1="64" x2="448" y2="448" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#5B4AEB"/>
+      <stop offset="0.58" stop-color="#7D69F6"/>
+      <stop offset="1" stop-color="#FF856C"/>
+    </linearGradient>
+    <radialGradient id="shine" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(154 120) rotate(43) scale(220 196)">
+      <stop offset="0" stop-color="white" stop-opacity="0.36"/>
+      <stop offset="1" stop-color="white" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow" x="74" y="82" width="364" height="378" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="10" stdDeviation="8" flood-color="#29186C" flood-opacity="0.28"/>
+    </filter>
+  </defs>
+  <rect x="30" y="30" width="452" height="452" rx="114" fill="url(#bg)"/>
+  <rect x="30" y="30" width="452" height="452" rx="114" fill="url(#shine)"/>
+  <rect x="30" y="30" width="452" height="452" rx="114" stroke="white" stroke-opacity="0.22" stroke-width="3"/>
+  <rect x="44" y="44" width="424" height="424" rx="100" stroke="white" stroke-opacity="0.12" stroke-width="2"/>
+  <path d="M 398 94.00 L 404.00 112.00 L 422.00 118.00 L 404.00 124.00 L 398 142.00 L 392.00 124.00 L 374.00 118.00 L 392.00 112.00 Z" fill="#FFDB80"/>
+  <path d="M 241.16 98.00 Q 265.24 98.00 274.29 195.24 Q 283.42 292.48 289.03 291.62 Q 313.53 241.96 357.30 241.96 Q 384.47 241.96 401.65 263.30 Q 418.83 284.65 418.83 307.79 Q 418.83 340.35 402.73 359.54 Q 386.70 378.73 354.86 378.73 Q 320.00 378.73 292.62 348.90 Q 282.77 384.84 268.61 408.99 Q 254.45 433.07 223.48 434.00 L 185.75 434.00 L 185.75 407.48 L 220.32 407.26 Q 247.70 406.40 271.27 321.95 Q 260.06 318.36 252.87 229.74 Q 245.69 141.12 232.68 141.12 Q 224.56 141.12 207.24 193.59 Q 189.99 245.98 189.99 289.83 Q 189.99 293.20 189.99 296.29 L 154.48 296.80 Q 154.48 239.95 138.67 184.25 Q 122.86 128.55 93.17 127.18 L 93.17 105.40 Q 126.16 105.40 144.28 130.34 Q 162.39 155.28 171.37 217.02 Q 181.65 171.88 191.78 152.12 Q 200.98 131.71 214.64 114.89 Q 228.37 98.00 241.16 98.00 Z M 305.41 319.44 Q 326.33 351.99 355.51 351.99 Q 391.66 351.99 393.67 307.79 Q 392.09 272.50 356.44 268.26 Q 322.30 268.26 305.41 319.44 Z" fill="white" filter="url(#shadow)"/>
+</svg>

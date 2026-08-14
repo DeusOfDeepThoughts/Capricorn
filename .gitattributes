@@ -1,2 +1,0 @@
-Capricorn-v1.0.0-Setup-x64.exe filter=lfs diff=lfs merge=lfs -text
-Capricorn-v1.0.0-Windows-x64.zip filter=lfs diff=lfs merge=lfs -text
